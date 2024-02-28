@@ -1,9 +1,16 @@
 import "./index.css"
+import { Routes, Route } from "react-router-dom";
+import Test from "./components/Home";
+
+
+
 function App() {
 
   return (
     <>
-    <h1>Hello World</h1>
+    <Routes>
+      <Route path="/" element={<Test />} />
+    </Routes>
     </>
   )
 }
